@@ -1,7 +1,22 @@
 package org.example;
 
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Person person = new Person("John", "Doe", 20);
+
+        System.out.println("First Name: " + person.getFirstName());
+        System.out.println("Last Name: " + person.getLastName());
+        System.out.println("Age: " + person.getAge());
+
+        Wall wall = new Wall(5,4);
+
+        System.out.println("area= " + wall.getArea());
+
+        wall.setHeight(-1.5);
+
+        System.out.println("Width: " + wall.getWidth());
+        System.out.println("Height: " + wall.getHeight());
+        System.out.println("Area: " + wall.getArea());
     }
 }
